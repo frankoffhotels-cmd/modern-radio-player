@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Modern Radio Player",
+  "version": "1.0",
+  "description": "Современный радио-плеер с эквалайзером",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://radiorecord.hostingradio.ru/*",
+    "https://dfm.hostingradio.ru/*",
+    "https://hitfm.hostingradio.ru/*",
+    "https://ep256.hostingradio.ru/*",
+    "http://microit.n340.com/*",
+    "https://nashe1.hostingradio.ru/*",
+    "http://maximum.hostingradio.ru/*"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; media-src http: https:;"
+  }
+}
